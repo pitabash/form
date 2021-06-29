@@ -1,0 +1,56 @@
+<mvc:View  
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Form Example">
+					<content>
+                        <SimpleForm xmlns="sap.ui.layout.form" editable="true">
+                            <title>
+                                <Title xmlns="sap.ui.core" text="Application Form"  >
+                                </Title>
+                            </title>
+                            <content > 
+                                <Label xmlns="sap.m" text="UserName" design="Bold" ></Label>
+                                <Input xmlns="sap.m" width="50%"></Input>
+                                <Label xmlns="sap.m" text="Date" design="Bold" ></Label>
+                                <DatePicker xmlns="sap.m" width="50%"></DatePicker>
+                                <Label xmlns="sap.m" text="Email" design="Bold" ></Label>
+                                <Input xmlns="sap.m" width="50%"></Input>
+                                <Label xmlns="sap.m" text="Phone" design="Bold" ></Label>
+                                <Input xmlns="sap.m" width="30%"></Input>
+                                <Label xmlns="sap.m" text="Gender" design="Bold"></Label>
+                                <RadioButton xmlns="sap.m" text="Male" groupName="Sex"  ></RadioButton>
+                                <RadioButton xmlns="sap.m" text="Female" groupName="Sex" ></RadioButton>
+                                <RadioButton xmlns="sap.m" text="Others" groupName="Sex" ></RadioButton>
+                                <Label xmlns="sap.m" text="City" design="Bold"></Label>
+                                <ComboBox xmlns="sap.m" width="30%">
+                                    <items>
+                                        <Item xmlns="sap.ui.core" text="Cuttack" ></Item>
+                                        <Item xmlns="sap.ui.core" text="JagatSinghPur" ></Item>
+                                        <Item xmlns="sap.ui.core" text="Bhubaneswar" ></Item>
+                                    </items>
+                                </ComboBox>
+                                <Label xmlns="sap.m" text="Address" design="Bold" ></Label>
+                                <TextArea xmlns="sap.m"></TextArea>
+                                <Label xmlns="sap.m" text="Skills" design="Bold" ></Label>
+                                <CheckBox xmlns="sap.m" text="JAVA"></CheckBox>
+                                <CheckBox xmlns="sap.m" text="ABAP"></CheckBox>
+                                <CheckBox xmlns="sap.m" text="PYTHON"></CheckBox>
+                                <CheckBox xmlns="sap.m" text="PHP"></CheckBox>
+                                <Label xmlns="sap.m" text="Work Experience" design="Bold" ></Label>
+                                <StepInput xmlns="sap.m" width="20%" min="0" max="30" ></StepInput>
+                                <Label xmlns="sap.m"></Label>
+                                <Button xmlns="sap.m" text="SUBMIT"  ></Button>
+                                <Button xmlns="sap.m" text="CANCEL"></Button>
+                            </content>
+                        </SimpleForm>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
